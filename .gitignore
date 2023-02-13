@@ -1,0 +1,12 @@
+../target/
+/atguigu-spring/target/
+/spring6-aop/target/
+/spring6-i18n/target/
+/spring6-ioc-annotation/target/
+/spring6-ioc-xml/target/
+/spring6-junit/target/
+/spring6-reflect/target/
+/spring6-resources/target/
+/spring6-validator/target/
+/spring-first/target/
+/spring-jdbc-tx/target/

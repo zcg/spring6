@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/util
+       http://www.springframework.org/schema/util/spring-util.xsd
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--1 创建三个对象
+        2 注入普通类型
+        3 使用util:类型定义
+        4 在学生bean里引入util:类型bean,完成lstmap注入-->
+    <bean id="student" class="github.com.zcg.spring6_ioc_xml.dimap.Student">
+        <property name="sid" value="1000"></property>
+        <property name="sname" value="小明"></property>
+        <!--        注入listmap属性-->
+        <property name="lessonList" ref="lessonList"></property>
+        <property name="teacherMap" ref="teacherMap"></property>
+    </bean>
+
+    <util:list id="lessonList">
+        <ref bean="lesson1"></ref>
+        <ref bean="lesson2"></ref>
+    </util:list>
+
+    <util:map id="teacherMap">
+        <entry>
+            <key>
+                <value>10001</value>
+            </key>
+            <ref bean="teacher1"></ref>
+        </entry>
+        <entry>
+            <key>
+                <value>10002</value>
+            </key>
+            <ref bean="teacher2"></ref>
+        </entry>
+    </util:map>
+
+    <bean id="lesson1" class="github.com.zcg.spring6_ioc_xml.dimap.Lesson">
+        <property name="lessonName" value="后端课程"></property>
+    </bean>
+    <bean id="lesson2" class="github.com.zcg.spring6_ioc_xml.dimap.Lesson">
+        <property name="lessonName" value="前端课程"></property>
+    </bean>
+    <bean id="teacher1" class="github.com.zcg.spring6_ioc_xml.dimap.Teacher">
+        <property name="teacherId" value="1001"></property>
+        <property name="teacherName" value="语文老师"></property>
+    </bean>
+    <bean id="teacher2" class="github.com.zcg.spring6_ioc_xml.dimap.Teacher">
+        <property name="teacherId" value="1002"></property>
+        <property name="teacherName" value="数学老师"></property>
+    </bean>
+
+
+    <!--    p命名空间注入-->
+    <bean id="studentp" class="github.com.zcg.spring6_ioc_xml.dimap.Student"
+          p:sid="100"
+          p:sname="mary"
+          p:lessonList-ref="lessonList"
+          p:teacherMap-ref="teacherMap"
+    >
+    </bean>
+
+</beans>

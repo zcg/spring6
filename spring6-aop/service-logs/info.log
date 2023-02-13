@@ -1,0 +1,23 @@
+2023-02-11 11:51:07,151 INFO com.atguigu.spring6_aop.example.CalculatorLogImpl [main] [日志] add 方法开始了 参数是:1 2 
+2023-02-11 11:51:07,155 INFO com.atguigu.spring6_aop.example.CalculatorLogImpl [main] [日志] add 方法开始了 结果是: 3 
+2023-02-11 15:23:54,949 INFO com.atguigu.spring6_aop.example.CalculatorLogImpl [main] [日志] add 方法开始了 参数是:1 2 
+2023-02-11 15:23:54,953 INFO com.atguigu.spring6_aop.example.CalculatorLogImpl [main] [日志] add 方法开始了 结果是: 3 
+2023-02-11 15:27:00,242 INFO com.atguigu.spring6_aop.example.CalculatorLogImpl [main] [日志] add 方法开始了 参数是:1 2 
+2023-02-11 15:27:00,245 INFO com.atguigu.spring6_aop.example.CalculatorLogImpl [main] [日志] add 方法开始了 结果是: 3 
+2023-02-11 15:27:00,258 INFO com.atguigu.spring6_aop.example.ProxyFactory$1 [main] [动态代理][日志]: add
+2023-02-11 15:27:00,260 INFO com.atguigu.spring6_aop.example.ProxyFactory$1 [main] [动态代理][日志]: add
+2023-02-11 15:27:53,071 INFO com.atguigu.spring6_aop.example.CalculatorLogImpl [main] [日志] add 方法开始了 参数是:1 2 
+2023-02-11 15:27:53,074 INFO com.atguigu.spring6_aop.example.CalculatorLogImpl [main] [日志] add 方法开始了 结果是: 3 
+2023-02-11 15:27:53,087 INFO com.atguigu.spring6_aop.example.ProxyFactory$1 [main] [动态代理][日志]: add
+2023-02-11 15:27:53,087 INFO com.atguigu.spring6_aop.example.ProxyFactory$1 [main] [动态代理][日志]: add
+2023-02-11 15:27:53,088 INFO com.atguigu.spring6_aop.example.ProxyFactory$1 [main] [动态代理][日志]: add
+2023-02-11 15:29:16,503 INFO com.atguigu.spring6_aop.example.CalculatorLogImpl [main] [日志] add 方法开始了 参数是:1 2 
+2023-02-11 15:29:16,507 INFO com.atguigu.spring6_aop.example.CalculatorLogImpl [main] [日志] add 方法开始了 结果是: 3 
+2023-02-11 15:29:16,519 INFO com.atguigu.spring6_aop.example.ProxyFactory$1 [main] [动态代理][日志]: add ，参数：[1, 2]
+2023-02-11 15:29:16,519 INFO com.atguigu.spring6_aop.example.ProxyFactory$1 [main] [动态代理][日志]: add ，结果：3
+2023-02-11 15:29:16,520 INFO com.atguigu.spring6_aop.example.ProxyFactory$1 [main] [动态代理][日志]: add ，方法执行完毕
+2023-02-11 15:30:26,016 INFO com.atguigu.spring6_aop.example.CalculatorLogImpl [main] [日志] add 方法开始了 参数是:1 2 
+2023-02-11 15:30:26,019 INFO com.atguigu.spring6_aop.example.CalculatorLogImpl [main] [日志] add 方法开始了 结果是: 3 
+2023-02-11 15:30:26,033 INFO com.atguigu.spring6_aop.example.ProxyFactory$1 [main] [动态代理][日志]: mul ，参数：[3, 2]
+2023-02-11 15:30:26,034 INFO com.atguigu.spring6_aop.example.ProxyFactory$1 [main] [动态代理][日志]: mul ，结果：6
+2023-02-11 15:30:26,034 INFO com.atguigu.spring6_aop.example.ProxyFactory$1 [main] [动态代理][日志]: mul ，方法执行完毕

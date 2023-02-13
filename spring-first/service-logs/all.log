@@ -1,0 +1,5 @@
+2023-02-08 20:52:35,714 DEBUG org.springframework.context.support.AbstractApplicationContext [main] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6127a7e
+2023-02-08 20:52:35,828 DEBUG org.springframework.beans.factory.xml.XmlBeanDefinitionReader [main] Loaded 1 bean definitions from class path resource [bean.xml]
+2023-02-08 20:52:35,852 DEBUG org.springframework.beans.factory.support.DefaultSingletonBeanRegistry [main] Creating shared instance of singleton bean 'user'
+2023-02-08 20:52:35,881 INFO github.com.zcg.spring6.test.TestUser [main] 执行调用功能######
+2023-02-08 20:52:35,882 ERROR github.com.zcg.spring6.test.TestUser [main] 这是一个报错

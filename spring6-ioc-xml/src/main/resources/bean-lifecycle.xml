@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="user" class="github.com.zcg.spring6_ioc_xml.lifecycle.User"
+          scope="singleton"
+          init-method="initMethod"
+          destroy-method="destroyMethod">
+        <property name="name" value="lucy"></property>
+    </bean>
+
+<!--    bean后置处理器要放在ioc容器里才能生效-->
+    <bean id="myBeanPost" class="github.com.zcg.spring6_ioc_xml.lifecycle.MyBeanPost"></bean>
+
+</beans>

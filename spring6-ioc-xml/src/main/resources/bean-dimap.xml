@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--   1 创建两个对象
+            2 注入普通类型属性
+            3 在学生bean注入map集合类型属性-->
+    <bean class="github.com.zcg.spring6_ioc_xml.dimap.Student" id="student">
+        <property name="sid" value="100" ></property>
+        <property name="sname" value="小明" ></property>
+<!--        map注入-->
+        <property name="teacherMap">
+            <map>
+                <entry>
+                    <key>
+                        <value>10001</value>
+                    </key>
+                    <ref bean="teacher1"></ref>
+                </entry>
+                <entry>
+                    <key>
+                        <value>10002</value>
+                    </key>
+                    <ref bean="teacher2"></ref>
+                </entry>
+            </map>
+        </property>
+    </bean>
+    <bean class="github.com.zcg.spring6_ioc_xml.dimap.Teacher" id="teacher1">
+<!--        注入普通类型属性-->
+        <property name="teacherId" value="1"></property>
+        <property name="teacherName" value="语文老师"></property>
+    </bean>
+    <bean class="github.com.zcg.spring6_ioc_xml.dimap.Teacher" id="teacher2">
+        <!--        注入普通类型属性-->
+        <property name="teacherId" value="2"></property>
+        <property name="teacherName" value="数学老师"></property>
+    </bean>
+</beans>

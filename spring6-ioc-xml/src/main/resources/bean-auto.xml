@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--    跟据类型自动装配-->
+    <!--controller-->
+<!--    <bean id="userController" class="github.com.zcg.spring6_ioc_xml.auto.controller.UserController"-->
+<!--          autowire="byType"></bean>-->
+<!--    &lt;!&ndash;    service&ndash;&gt;-->
+<!--    <bean id="userService" class="github.com.zcg.spring6_ioc_xml.auto.service.UserServiceImpl"-->
+<!--          autowire="byType"></bean>-->
+<!--    &lt;!&ndash;    dao&ndash;&gt;-->
+<!--    <bean id="userDao" class="github.com.zcg.spring6_ioc_xml.auto.dao.UserDaoImpl"-->
+<!--          autowire="byType"></bean>-->
+
+<!--    根据名称自动装配-->
+    <!--controller-->
+    <bean id="userController" class="github.com.zcg.spring6_ioc_xml.auto.controller.UserController"
+          autowire="byName"></bean>
+    <!--    service-->
+    <bean id="userService" class="github.com.zcg.spring6_ioc_xml.auto.service.UserServiceImpl"
+          autowire="byName"></bean>
+    <!--    dao-->
+    <bean id="userDao" class="github.com.zcg.spring6_ioc_xml.auto.dao.UserDaoImpl"
+          autowire="byName"></bean>
+</beans>
